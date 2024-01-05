@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: AliceBlue;
+}
+body {
+    overflow-x: hidden;
+  }
+  
+
+h1{
+ text-align: center;
+}
+p{
+ font-size: 55px;
+}
+
+header{
+
+font-family: 'Apple Chancery', cursive;
+font-size: 30px;
+padding: 20px;
+}
+#main_class {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 25%;
+    height: 300px; /* Set a specific height for all boxes */
+    padding: 7px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%; /* Make the image fill its container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 4px;
+  }
+
+img:hover{
+  transform: scale(1.3,1.3);
+  transition: .3s transform;
+
+}
+.navbar {
+    margin-left: 25%;
+    width: 50%;
+    background-color: gray; /* Light background color */
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 16px;
+    background-color: gray;
+  }
+  
+  .navbar ul {
+    background-color: gray;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin-left:50px;
+    color: gray;
+    /* margin-top: 10px; */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; /* Light background color for dropdown */
+  }
+  
+  .navbar li:hover > ul {
+    display: inherit;
+  }
+  
+  .navbar ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .navbar ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+  }
+  
+  .navbar li:hover {
+    background-color: white; /* Hover background color */
+  }
+  
+  .navbar ul ul li a {
+    background-color: white; /* Dropdown item background color */
+    color: gray; /* Dropdown item text color */
+  }
+  
+  .navbar ul ul li:hover {
+    background-color: white; /* Hover background color for dropdown item */
+  }
+  
+
+  
+button{
+	color: black;
+	padding: 10px 25px;
+	background-color: lightblue;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 18px;
+}
